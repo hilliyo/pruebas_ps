@@ -1,6 +1,6 @@
 # pruebas_ps
 # Technical test
-Write by: Gilberto Delgado
+Writed by: Gilberto Delgado
 
 This repository contains a technical test of OOP.
 
