@@ -7,11 +7,12 @@ public class Alumno {
 	int edad;
 	float calificacion;
 	
-	//constructores
+	//constructor que inicializa el nombre
 	public Alumno(String nombre) {
 		this.nombre = nombre;
 	}
 	
+	//constructor que inicializa todos los atributos
 	public Alumno(String nombre, int edad, float calificacion) {
 		this.nombre = nombre;
 		this.edad = edad;

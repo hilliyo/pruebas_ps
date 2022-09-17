@@ -5,6 +5,7 @@ public class Triangulo {
 	private float ladoA;
 	private float ladoB;
 	private float ladoC;
+	//objeto para determinar cual lado del triangulo es mayor
 	private ComparadorNumeros comparador;
 	
 	//inicializar atributos
@@ -38,13 +39,13 @@ public class Triangulo {
 	
 	// --- class methods
 	public float obtenerLadoMayor() {
-		float mayor;
+		//obtiene el lado mayor del triangulo usando objeto del tipo ComparadorNumeros
 		comparador = new ComparadorNumeros(this);
-		mayor = comparador.CalcularMayor();
-		return mayor;
+		return comparador.CalcularMayor();
 	}
 	
 	public boolean esEquilatero() {
+		//determinar si el triángulo es equilatero
 		boolean esEquilatero = false;
 		if(this.ladoA == this.ladoB && this.ladoA == this.ladoC) {
 			esEquilatero = true;

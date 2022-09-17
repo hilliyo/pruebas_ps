@@ -2,6 +2,7 @@ package pruebas_ps;
 
 public class ComparadorNumeros {
 	
+	//atributos
 	private float numero1;
 	private float numero2;
 	private float numero3;

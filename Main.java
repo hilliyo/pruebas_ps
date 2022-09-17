@@ -36,16 +36,21 @@ public class Main {
 		}
 	}
 	
+	
 	private static void limpiarConsola() {
+		//metodo para "limpiar" la consola
 		for(int i = 0; i < 10; i++) {
 			System.out.println();
 		}
 		System.out.println("Presione Enter para continuar...");
 		scan.nextLine();
 	}
+	
 	private static void compararNumeros() {
 		//metodo para comparar numeros usando la clase ComparadorNumeros
+		//crear objeto de la clase
 		ComparadorNumeros comparador = new ComparadorNumeros();
+		//introducir valores
 		System.out.print("Ingresa el primero número: ");
 		float numero1 = Float.parseFloat(scan.nextLine());
 		comparador.setNumero1(numero1);
@@ -60,16 +65,18 @@ public class Main {
 		float numero3 = Float.parseFloat(scan.nextLine());
 		comparador.setNumero3(numero3);
 		System.out.println();
-				
+		
+		//obtener mayor y menor de los tres numeros
 		System.out.println("El mayor es: " + comparador.CalcularMayor());
 		System.out.println("El menor es: " + comparador.CalcularMenor());
 	}
 	
 	private static void analizarTriangulo() {
-		//metodo para comparar numeros usando la clase ComparadorNumeros
+		//probar el funcionamiento de la clase Triangulo
 		
 		Triangulo triangulo = new Triangulo();
 		
+		//obtener valores
 		System.out.print("Ingresa el primer lado del triángulo: ");
 		float ladoA = Float.parseFloat(scan.nextLine());
 		triangulo.setLadoA(ladoA); 
@@ -85,7 +92,8 @@ public class Main {
 		triangulo.setLadoC(ladoC); 
 		System.out.println();
 		
-		System.out.println("El lado mayor mide: " + triangulo.obtenerLadoMayor());;
+		//obtener el lado mayor
+		System.out.println("El lado mayor mide: " + triangulo.obtenerLadoMayor());
 
 		//comprobar si es equilatero o no
 		if(triangulo.esEquilatero()) {
